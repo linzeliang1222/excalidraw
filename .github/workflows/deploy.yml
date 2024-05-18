@@ -22,9 +22,9 @@ jobs:
       # 个人环境变量配置
       - name: Init .env file
         run: |
-          echo -e "\nVITE_APP_BACKEND_V2_GET_URL=${{ secrets.ENV_VITE_APP_BACKEND_V2_GET_URL }}" >> .env.production
-          echo -e "\nVITE_APP_BACKEND_V2_POST_URL=${{ secrets.ENV_VITE_APP_BACKEND_V2_POST_URL }}" >> .env.production
-          echo -e "\nVITE_APP_WS_SERVER_URL=${{ secrets.ENV_VITE_APP_WS_SERVER_URL }}" >> .env.production
+          echo -e "\nVITE_APP_BACKEND_V2_GET_URL=${{ vars.ENV_VITE_APP_BACKEND_V2_GET_URL }}" >> .env.production
+          echo -e "\nVITE_APP_BACKEND_V2_POST_URL=${{ vars.ENV_VITE_APP_BACKEND_V2_POST_URL }}" >> .env.production
+          echo -e "\nVITE_APP_WS_SERVER_URL=${{ vars.ENV_VITE_APP_WS_SERVER_URL }}" >> .env.production
       # 安装依并构建程序
       - name: Install dependencies and compile project
         run: |
