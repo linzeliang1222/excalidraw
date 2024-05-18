@@ -774,6 +774,12 @@ export const actionChangeFontFamily = register({
       testId: string;
     }[] = [
       {
+        value: FONT_FAMILY.ZYQMYB,
+        text: t("labels.handDrawnZh"),
+        icon: SloppinessArchitectIcon,
+        testId: "font-family-virgil",
+      },
+      {
         value: FONT_FAMILY.Virgil,
         text: t("labels.handDrawn"),
         icon: FreedrawIcon,
