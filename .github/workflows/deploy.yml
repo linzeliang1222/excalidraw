@@ -41,7 +41,7 @@ jobs:
           key: ${{ secrets.PRIVATE_KEY }}
           source: ${{ vars.SOURCE }}
           target: ${{ vars.TARGET }}
-          strip_components: 1
+          strip_components: 2
       # 部署
       - name: Deploy
         uses: appleboy/ssh-action@v1.0.3
