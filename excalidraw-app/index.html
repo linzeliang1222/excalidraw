@@ -216,7 +216,7 @@
     <script type="module" src="index.tsx"></script>
     <% if (typeof PROD != 'undefined' && PROD == true) { %>
     <!-- 100% privacy friendly analytics -->
-    <script>
+    <!-- <script>
       // need to load this script dynamically bcs. of iframe embed tracking
       var scriptEle = document.createElement("script");
       scriptEle.setAttribute(
@@ -245,8 +245,9 @@
           }
         });
       }
-    </script>
+    </script> -->
     <!-- end LEGACY GOOGLE ANALYTICS -->
+    <script defer src="https://analytics.zller.cc/script.js" data-website-id="f4384ce4-bf55-4508-8252-fc96cf8c8867" data-domains="draw.zller.cc"></script>
     <% } %>
   </body>
 </html>
